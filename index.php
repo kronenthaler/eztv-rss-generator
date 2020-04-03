@@ -2,12 +2,12 @@
 
 include("simple_html_dom.php");
 
-$html = file_get_html('http://eztv.it/shows/'.$_REQUEST['show']);
+$html = file_get_html('https://eztv.io/shows/'.$_REQUEST['show']);
 
 //header("content-type:text/xml");
 
 echo '<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE torrent PUBLIC "-//bitTorrent//DTD torrent 0.1//EN" "http://xmlns.ezrss.it/0.1/dtd/">
+<!DOCTYPE torrent PUBLIC "-//bitTorrent//DTD torrent 0.1//EN" "http://xmlns.ezrss.io/0.1/dtd/">
 <rss version="2.0">
 	<channel>
 		<title>ezRSS - Search Results</title>
